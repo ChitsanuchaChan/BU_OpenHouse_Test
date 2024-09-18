@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="allstyles.css" rel="stylesheet">
+  <title>Contact Us</title>
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffc400;
+      background-color: #34495e; 
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .text-content h2 {
+      font-size: 1.8rem;
+      color: #ffc400;
+    }    
+    .section-rent-media {
+      margin-top: 2rem;
+    }    
+    .section-title {
+      font-size: 1.5rem;
+      color: #ffc400;
+      border-bottom: 2px solid #ffc400;
+      padding-bottom: 0.5rem;
+    }    
+    .layout-card-portfolio {
+      margin-bottom: 1rem;
+    }    
+    .card-portfolio {
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }    
+    .card-portfolio img {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }    
+    .card-portfolio:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }    
+    .layout-sub-head {
+      padding: 1rem;
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+    }    
+    .section-visit {
+      background-color: #2c3e50; 
+      border-radius: 10px;
+      padding: 2rem;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }    
+    .text-visit-title {
+      color: #f39c12;
+      font-size: 2rem;
+      font-weight: bold;
+    }    
+    .text-visit-description, .text-visit-info-title {
+      color: #ecf0f1;
+    }    
+    .text-visit-info-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }    
+    .row-visit-info {
+      background-color: #34495e;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    .text-lg ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .text-lg li {
+      margin-bottom: 0.5rem;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top border-bottom">
+      <div class="container">
+        <a href="https://www.bu.ac.th/th" class="navbar-brand">
+          <img class="img-logo" src="image/bulogo.jpg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="homepage.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="layout-head-map mb-4 text-center">
+        <h1>Main Campus Map</h1>
+      </div>
+      <div class="mb-4 text-center">
+        <img class="img-insidemap" src="image/map inside.jpg" alt="insidemap">
+      </div>
+      <div id="map" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 text-content">
+              <div class="text-lg">
+                <div class="mb-2 font-weight-bold">การเดินทาง</div>
+                <div class="mb-1">
+                  <span class="font-weight-bold">รถเมล์:</span>
+                  <span class="font-light">สาย 39 ปอ.510 / ปอ.520</span>
+                </div>
+                <div class="mb-1">
+                  <span class="font-weight-bold">รถตู้ สาย ต.85-93 (ฝั่งเกาะพญาไท):</span>
+                  <ul>
+                    <li>อนุสาวรีย์ชัยสมรภูมิ-มธ. (ศูนย์รังสิต) - ใกล้ BTS อนุสาวรีย์ชัยสมรภูมิ</li>
+                    <li>สาย ต.118-1 หมอชิต-มธ. (ศูนย์รังสิต)</li>
+                    <li>สาย 1008 (อยู่ตรงข้างฟิวเจอร์พาร์ค รังสิต)</li>
+                    <li>ช่วงรังสิต-มธ. (ศูนย์รังสิต)</li>
+                  </ul>
+                </div>
+                <div class="mb-1">
+                  <span class="font-weight-bold">รถไฟฟ้าสายสีเขียว (BTS):</span>
+                  <ul>
+                    <li>ลงสถานีหมอชิต (ทางออก 3,4) ต่อรถตู้สาย ต. 118-1</li>
+                    <li>ลงสถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3,4) ต่อรถตู้สาย ต.85-93 (ฝั่งเกาะพญาไท)</li>
+                    <li>ลงสถานีแยกคปอ. (ทางออก 1,3) ต่อรถเมล์ สาย 39,520</li>
+                  </ul>
+                </div>
+                <div class="mb-1">
+                  <span class="font-weight-bold">รถไฟฟ้าสายสีน้ำเงิน (MRT):</span>
+                  <ul>
+                    <li>ลงสถานีจตุจักร (ทางออก 3,4) ต่อรถตู้สาย ต.118-1 หมอชิต-มธ. (ศูนย์รังสิต)</li>
+                  </ul>
+                </div>
+                <div>
+                  <span class="font-weight-bold">รถไฟฟ้าสายสีแดง (SRT):</span>
+                  <ul>
+                    <li>ลงสถานี รังสิต ทางออกที่ 3 ต่อรถสองแถวสาย รังสิต-จารุศร</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.635489989523!2d100.60990561526141!3d14.0396079943404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e280728e16f629%3A0xdadc26839284214d!2sBangkok+University+Rangsit+Campus!5e0!3m2!1sen!2sth!4v1522737188013"
+                  style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="visit" class="section-visit">
+        <div class="container">
+          <div class="text-visit-title mb-3">
+            ติดต่อเพื่อเยี่ยมชม
+          </div>
+          <div class="text-visit-description mb-4">
+            สำหรับบุคคลทั่วไปติดต่อเยี่ยมชมมหาวิทยาลัยกรุงเทพ ได้ที่ฝ่ายรับสมัครนักศึกษา<br>
+            เวลา 09.00 - 17.00 น. (จันทร์ - ศุกร์) ไม่เว้นวันหยุดนักขัตฤกษ์
+          </div>
+          <div class="text-visit-info-title mb-3">
+            เบอร์สำหรับติดต่อเพื่อเยี่ยมชม
+          </div>
+          <div class="row row-visit-info justify-content-center">
+            <div class="col-auto">
+              02-4073888 ต่อ 2411
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- from BU website -->
+    <div class="section-rent-media">
+      <div class="container">
+        <div class="row row-layout">
+          <div class="col-12 col-md-6">
+            <div class="section-title">
+              <span class="text-title" style="font-size: 70px;">บรรยากาศ</span>
+            </div>
+            <div class="row row-item">
+              <div class="col-12">
+                <div class="layout-card-portfolio">
+                  <div class="card-portfolio card-portfolio-sub-head">
+                    <div class="layout-image">
+                      <div class="ratio ratio-4x3">
+                        <img class="img-cover" src="https://contents.bu.ac.th/contents/images/contact-page/b19d8cf4-b53a-4ce2-9c8c-9f60ecaff258.jpg" alt="Library">
+                      </div>
+                    </div>
+                    <div class="layout-sub-head">
+                      <span class="card-sub-head-text">หอสมุดสุรัตน์ โอสถานุเคราะห์</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="layout-card-portfolio">
+                  <div class="card-portfolio card-portfolio-sub-head">
+                    <div class="layout-image">
+                      <div class="ratio ratio-4x3">
+                        <img class="img-cover" src="https://contents.bu.ac.th/contents/images/contact-page/47a37ed8-8f71-40ca-bf82-a7e7b2316fa5.jpg" alt="Meeting Room">
+                      </div>
+                    </div>
+                    <div class="layout-sub-head">
+                      <span class="card-sub-head-text">บรรยากาศภายในห้องประชุม/สัมมนา</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="layout-card-portfolio">
+                  <div class="card-portfolio card-portfolio-sub-head">
+                    <div class="layout-image">
+                      <div class="ratio ratio-4x3">
+                        <img class="img-cover" src="https://contents.bu.ac.th/contents/images/contact-page/c4dc2d0e-804f-4e35-abb3-6c53ca7ea14b.jpg" alt="Building Petch">
+                      </div>
+                    </div>
+                    <div class="layout-sub-head">
+                      <span class="card-sub-head-text">ตึกเพชร</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="layout-card-portfolio">
+                  <div class="card-portfolio card-portfolio-sub-head">
+                    <div class="layout-image">
+                      <div class="ratio ratio-4x3">
+                        <img class="img-cover" src="https://contents.bu.ac.th/contents/images/contact-page/036a1c49-165f-46a0-a519-06a2e0a1102f.jpg" alt="Humanities Building">
+                      </div>
+                    </div>
+                    <div class="layout-sub-head">
+                      <span class="card-sub-head-text">บรรยากาศด้านหน้าตึกคณะมนุษยศาสตร์และการจัดการการท่องเที่ยว</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row row-item">
+              <div class="col-12">
+                <div class="layout-card-portfolio">
+                  <div class="card-portfolio card-portfolio-sub-head">
+                    <div class="layout-image">
+                      <div class="ratio ratio-4x3">
+                        <img class="img-cover" src="https://contents.bu.ac.th/contents/images/contact-page/fce628b9-353f-48a1-b6be-454f2cc11cdd.jpg" alt="Filming Location">
+                      </div>
+                    </div>
+                    <div class="layout-sub-head">
+                      <span class="card-sub-head-text">สถานที่ถ่ายภาพยนตร์ / ภาพนิ่งทั้งภายในและภายนอกอาคาร</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="layout-card-portfolio">
+                  <div class="card-portfolio card-portfolio-sub-head">
+                    <div class="layout-image">
+                      <div class="ratio ratio-4x3">
+                        <img class="img-cover" src="https://contents.bu.ac.th/contents/images/contact-page/860ebe95-492b-4cef-9a8f-ae1fd8cc8930.jpg" alt="Arts Building">
+                      </div>
+                    </div>
+                    <div class="layout-sub-head">
+                      <span class="card-sub-head-text">บรรยากาศด้านหน้าตึกคณะศิลปกรรมศาสตร์</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="layout-card-portfolio">
+                  <div class="card-portfolio card-portfolio-sub-head">
+                    <div class="layout-image">
+                      <div class="ratio ratio-4x3">
+                        <img class="img-cover" src="https://contents.bu.ac.th/contents/setup/uploads/images/contact-page/59be8c1f-85f0-4a5c-bdd5-76cb4f21b0db.jpg" alt="SAC Building">
+                      </div>
+                    </div>
+                    <div class="layout-sub-head">
+                      <span class="card-sub-head-text">บรรยากาศด้านหน้าตึก SAC</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="layout-card-portfolio">
+                  <div class="card-portfolio card-portfolio-sub-head">
+                    <div class="layout-image">
+                      <div class="ratio ratio-4x3">
+                        <img class="img-cover" src="https://contents.bu.ac.th/contents/images/contact-page/55795a85-35da-4b3f-b1da-ec92a7de9eb5.jpg" alt="Petch Building">
+                      </div>
+                    </div>
+                    <div class="layout-sub-head">
+                      <span class="card-sub-head-text">บรรยากาศหน้าตึกเพชร</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <p class="mb-0">© 2024 BU Open House. All rights reserved.</p>
+      <div class="social-links d-flex flex-column flex-md-row align-items-md-center">
+        <a class="text-link mb-2 mb-md-0 me-md-3 d-flex align-items-center" href="https://www.facebook.com/bangkokuniversity" target="_blank">
+          <i class="fa-brands fa-facebook me-2"></i>Bangkok University
+        </a>
+        <a class="text-link d-flex align-items-center" href="https://www.instagram.com/bangkok_bu/" target="_blank">
+          <i class="fa-brands fa-instagram me-2"></i>@bangkok_BU
+        </a>
+      </div>
+      <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+      </button>
+    </div>
+  </footer>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>

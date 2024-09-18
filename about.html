@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="allstyles.css" rel="stylesheet" />
+  <title>About Us</title>
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      margin-bottom: 20px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .content-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start; /* จัดแนวตามแนวตั้งให้เริ่มที่ด้านบน */
+    }
+    .content-text {
+      flex: 2; /* ทำให้พื้นที่ข้อความกว้างกว่าภาพ */
+      min-width: 300px; /* กำหนดขนาดขั้นต่ำ */
+      padding: 20px; /* เพิ่มพื้นที่ภายใน */
+      background-color: rgba(0, 0, 0, 0.7); /* เพิ่มพื้นหลังเพื่อทำให้ข้อความโดดเด่น */
+      border-radius: 8px; /* มุมโค้งมน */
+    }
+    .carousel-item img {
+      object-fit: cover;
+      height: 500px; /* กำหนดความสูงของภาพใน Carousel */
+    }
+  </style>
+</head>
+<body class="bg-dark text-white">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top border-bottom">
+      <div class="container">
+        <a href="https://www.bu.ac.th/th" class="navbar-brand">
+          <img class="img-logo" src="image/bulogo.jpg" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+          aria-controls="offcanvas" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">BU Open House</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="homepage.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mt-4">
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide mb-4">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-item active">
+            <img src="image/bu about1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/bu about2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/bu-about3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="content-container">
+        <div class="content-text">
+          <p class="text-center">ขณะที่คุณอ่านข้อความนี้ หนึ่งวินาทีก็ผ่านไป และวินาทีถัดมา โลกก็ไม่เหมือนเดิมแล้ว!</p>
+          <p class="text">&nbsp;&nbsp;&nbsp;โลกกำลังหมุนเร็วขึ้น ความเปลี่ยนแปลงใหม่ๆ เกิดขึ้นในระดับวินาที การศึกษาแบบไหนที่จะตอบโจทย์อันซับซ้อนของโลกแห่งความเปลี่ยนแปลงนี้ได้ …มหาวิทยาลัยกรุงเทพไม่เคยหยุดหาคำตอบของคำถามนี้</p>
+          <p class="text">&nbsp;&nbsp;&nbsp;ระหว่างทางกว่า 60 ปี ที่เราปรับปรุงและเปลี่ยนแปลงเพื่อตอบโจทย์แห่งยุคสมัย ผ่านช่วงเวลาของสังคมไทย ตั้งแต่ยุคก่อร่างสร้างตัว ยุคฟองสบู่ ยุคโลกาภิวัฒน์ ยุค 3G-4G-5G ไปจนถึงกี่ G ก็ตาม เรายังพัฒนาหลักสูตร วิธีการเรียนการสอน อาคารสถานที่ เทคโนโลยี และสิ่งแวดล้อม ที่ยืนยันถึงความเชื่อมั่นในเรื่อง “ออกแบบอนาคตด้วย Passion ของตัวคุณเอง”</p>
+          <p class="text-center"><strong>จุดเริ่มต้น</strong></p>
+          <p class="text">&nbsp;&nbsp;&nbsp;ปี พ.ศ. 2505 หรือ ค.ศ. 1962 คือปีที่น่าจดจำด้วยเหตุผลหลายๆ อย่าง มันคือปีที่บรรยากาศสงครามเย็นกำลังจะกลายเป็นสงครามร้อนด้วยวิกฤตการณ์ขีปนาวุธคิวบา, ปีที่บ๊อบ ดีแลน เดินขึ้นไปบนเวทีในคลับที่นิวยอร์กเพื่อเล่นเพลง Blowing in the Wind แล้วร่ำร้องถึงคำตอบที่ปลิวหายไปในสายลม, ปีที่ภาพยนตร์ เจมส์ บอนด์ เรื่องแรก ‘Dr. No’ เข้าฉายในโรงภาพยนตร์, มันยังเป็นปีที่ชาวโลกพากันมองไปยังห้วงอวกาศ เพราะมีการส่งดาวเทียมสื่อสารดวงแรกของโลกสู่ห้วงอวกาศ ส่วนในเมืองไทย เราก็หนีสงครามเย็นไม่พ้นด้วยการที่สหรัฐอเมริกาเข้ามาสร้างฐานทัพในโคราช และยังเป็นปีอันน่าเศร้าของคนไทยเมื่อพายุแฮร์เรียดเคลื่อนเข้าถล่มแหลมตะลุมพุกจนเสียหายยับเยิน…</p>
+          <p class="text">&nbsp;&nbsp;&nbsp;ในวันคริสมาสต์ของปีนั้นเอง ยังเป็นวันที่สถาบันการศึกษาเอกชนขนาดใหญ่แห่งแรกของไทยได้ถูกก่อตั้งขึ้น โดย อาจารย์ สุรัตน์ โอสถานุเคราะห์ (อดีตประธานกรรมการบริษัท โอสถสภา จำกัด และอดีตนายกสมาคมถ่ายภาพแห่งประเทศไทย ในพระบรมราชูปถัมภ์) กับอาจารย์ปองทิพย์ โอสถานุเคราะห์ และมี ดร.เจริญ คันธวงศ์ เป็นอธิการบดีคนแรก ตอนนั้นเป็นห้วงเวลาที่ประเทศกำลังเติบโต การรับราชการดูจะเป็นเป้าหมายของคนหนุ่มสาวส่วนใหญ่ หากแต่ผู้ก่อตั้งทั้งสองท่านกลับเล็งเห็นความสำคัญขององค์กรเอกชนที่จะเป็นกำลังสำคัญในการพัฒนาประเทศเช่นกัน จึงได้มีเจตจำนงในการสร้างบุคลากรที่มีคุณภาพสำหรับองค์กรเอกชนในประเทศไทย จากวันนั้น สถาบันแห่งนี้ก็ค่อยๆ เติบโตขึ้น กลายเป็น ‘มหาวิทยาลัยกรุงเทพ’ (Bangkok University) ในปี พ.ศ. 2527</p>
+          <p class="text">&nbsp;&nbsp;&nbsp;ปัจจุบัน มหาวิทยาลัยกรุงเทพ คือ มหาวิทยาลัยชื่อดังที่ยังเป็นมหาวิทยาลัยชั้นนำในเรื่องการก้าวนำยุคสมัย เป็นสถาบันที่ยังคงผลิตบัณฑิตรุ่นแล้วรุ่นเล่าให้เป็นบุคลากรรุ่นใหม่ที่มีคุณภาพ มีความคิดสร้างสรรค์ และมีจิตวิญญาณผู้ประกอบการ เป็นกำลังสำคัญของสังคมไทยให้ก้าวทันโลกที่เปลี่ยนแปลงทุกวินาทีต่อไป</p>
+        </div>
+        <div class="images-container">
+          <img src="image/tourism Tower.jpg" alt="Tourism Tower">
+          <img src="image/thai pavillion.jpg" alt="Thai Pavillion">
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/EeWoXHwuHXw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text-center">
+          <span class="card-title-text">At Bangkok University International, I WILL.</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <p class="mb-0">© 2024 BU Open House. All rights reserved.</p>
+      <div class="social-links d-flex flex-column flex-md-row align-items-md-center">
+        <a class="text-link mb-2 mb-md-0 me-md-3 d-flex align-items-center" href="https://www.facebook.com/bangkokuniversity" target="_blank">
+          <i class="fa-brands fa-facebook me-2"></i>Bangkok University
+        </a>
+        <a class="text-link d-flex align-items-center" href="https://www.instagram.com/bangkok_bu/" target="_blank">
+          <i class="fa-brands fa-instagram me-2"></i>@bangkok_BU
+        </a>
+      </div>
+      <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+      </button>
+    </div>
+  </footer>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>

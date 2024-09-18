@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="allstyles.css" rel="stylesheet">
+  <title>Schedule</title>
+  <style>
+    .activity-card {
+      background-color: #ffffff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .activity-card h2 {
+      font-size: 1.25rem;
+      color: #333;
+    }
+    .activity-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .activity-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+    .certificate {
+      background-color: #f39c12;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffc400;
+      background-color: #34495e; 
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top border-bottom">
+      <div class="container">
+        <a href="https://www.bu.ac.th/th" class="navbar-brand">
+          <img class="img-logo" src="image/bulogo.jpg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="homepage.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container mt-5">
+
+    <h1 class="text-center mb-4">กำหนดการ</h1>
+
+    <div class="row">
+      <!-- Column 1 -->
+      <div class="col-md-6">
+        <div class="activity-card">
+          <h2>การเขียนโปรแกรมปัญญาประดิษฐ์เพื่อตรวจจับวัตถุ</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และวิทยาการข้อมูล</p>
+          <p><i class="fa fa-clock"></i> เวลา: 10:00 AM - 11:00 AM</p>
+        </div>
+        <div class="activity-card">
+          <h2>การพัฒนาเกมด้วย Unreal Engine</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
+          <p><i class="fa fa-clock"></i> เวลา: 11:30 AM - 12:30 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>การสร้างตัวละครด้วย Generative AI</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมมัลติมีเดียและเอ็นเตอร์เทนเมนต์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 1:00 PM - 2:00 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>การพัฒนาเกมบนโลกเสมือนจริง Virtual Reality</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
+          <p><i class="fa fa-clock"></i> เวลา: 2:30 PM - 3:30 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>การสร้าง Visual Effect สำหรับเกม ด้วย Unreal Engine</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
+          <p><i class="fa fa-clock"></i> เวลา: 4:00 PM - 5:00 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>เทคนิคการพัฒนาระบบและเป็นผู้ปกป้องหมวกขาวในโลกไซเบอร์ White Hacker</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 1:30 PM - 2:30 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>นิทรรศการผลงานนักศึกษาทุกสาขาคณะวิศวกรรมศาสตร์</h2>
+          <p>คณะวิศวกรรมศาสตร์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 3:00 PM - 4:00 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>A successful story of professional in IT Industry (CS)</h2>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 4:30 PM - 5:30 PM</p>
+        </div>
+      </div>     
+      <!-- Column 2 -->
+      <div class="col-md-6">
+        <div class="activity-card">
+          <h2>เสริมศักยภาพความคิดสร้างสรรค์ด้วยหุ่นยนต์แขนกล Enhancing Creative Potential with Robotic Arms</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะวิศวกรรมศาสตร์ | สาขาวิชาวิศวกรรมคอมพิวเตอร์และหุ่นยนต์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 9:00 AM - 10:00 AM</p>
+        </div>
+        <div class="activity-card">
+          <h2>Session Talk and Show Drone</h2>
+          <p>คณะวิศวกรรมศาสตร์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 10:30 AM - 11:30 AM</p>
+        </div>
+        <div class="activity-card">
+          <h2>เส้นทางสู่อาชีพ พบกับปรมาจารย์วงการเกม</h2>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
+          <p><i class="fa fa-clock"></i> เวลา: 12:00 PM - 1:00 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>เทคนิคการพัฒนาเว็บไซต์เต็มรูปแบบ (Frond End และ Back End)</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 6:00 PM - 7:00 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>Interactive Media</h2>
+          <p>คณะวิศวกรรมศาสตร์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 7:30 PM - 8:30 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>เทคนิคการวิเคราะห์และการนำเสนอข้อมูล (Data Science and Data Visualization)</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์</p>
+          <p><i class="fa fa-clock"></i> เวลา: 9:00 AM - 10:00 AM</p>
+        </div>
+        <div class="activity-card">
+          <h2>A successful story of professional in IT Industry (IT)</h2>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</p>
+          <p><i class="fa fa-clock"></i> เวลา: 10:30 AM - 11:30 AM</p>
+        </div>
+        <div class="activity-card">
+          <h2>การใช้ปัญญาประดิษฐ์วิเคราะห์ธุรกิจ (Business Analyst)</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</p>
+          <p><i class="fa fa-clock"></i> เวลา: 12:00 PM - 1:00 PM</p>
+        </div>
+        <div class="activity-card">
+          <h2>การพัฒนาแอปพลิเคชัน ด้วย Low-Code Application Platform</h2>
+          <span class="certificate">CERTIFICATE</span>
+          <p>คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิชาเทคโนโลยีสารสนเทศ</p>
+          <p><i class="fa fa-clock"></i> เวลา: 1:30 PM - 2:30 PM</p>
+        </div>
+  </main>
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <p class="mb-0">© 2024 BU Open House. All rights reserved.</p>
+      <div class="social-links d-flex flex-column flex-md-row align-items-md-center">
+        <a class="text-link mb-2 mb-md-0 me-md-3 d-flex align-items-center" href="https://www.facebook.com/bangkokuniversity" target="_blank">
+          <i class="fa-brands fa-facebook me-2"></i>Bangkok University
+        </a>
+        <a class="text-link d-flex align-items-center" href="https://www.instagram.com/bangkok_bu/" target="_blank">
+          <i class="fa-brands fa-instagram me-2"></i>@bangkok_BU
+        </a>
+      </div>
+      <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+      </button>
+    </div>
+  </footer>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

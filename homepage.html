@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="allstyles.css" rel="stylesheet" />
+  <title>BU Open House 2024</title>
+  <style>
+    /* ปรับขนาดของภาพ */
+    .img-small {
+      max-width: 80px;
+      height: auto;
+      border: 2px solid #fff; /* กรอบ */
+      padding: 5px;
+      background-color: white; 
+      border-radius: 50%; /* ทำให้กรอบภาพเป็นวงกลม */
+    }
+    /* ปุ่ม */
+    .btn-custom {
+      color: white; /* สีข้อความ */
+      border: 2px solid #fff; /* สีกรอบ */
+      text-decoration: none;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    /* สีพื้นหลังและกรอบสำหรับแต่ละปุ่ม */
+    /* About Us */
+    .btn-about {
+      background-color: #1e90ff; 
+      border-color: #1e90ff; 
+    }
+    /* Schedule */
+    .btn-schedule {
+      background-color: #32cd32;
+      border-color: #32cd32;
+    }
+    /* Contact Us */
+    .btn-contact {
+      background-color: #ff4500;
+      border-color: #ff4500;
+    }
+    /* FAQ */
+    .btn-faq {
+      background-color: #ff1493;
+      border-color: #ff1493;
+    }
+    .btn-custom:hover {
+      filter: brightness(0.9); /* ลดความสว่าง */
+    }
+    .carousel-item img {
+      max-height: 500px; /* ปรับความสูงสูงสุดของภาพใน carousel */
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-dark text-white">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top border-bottom">
+      <div class="container">
+        <a href="https://www.bu.ac.th/th" class="navbar-brand">
+          <img class="img-logo" src="image/bulogo.jpg" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+          aria-controls="offcanvas" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">BU Open House</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="homepage.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mt-4">
+      <div class="mb-4 text-center">
+        <!-- Carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/openhouse_homepage.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="image/openhouse_homepage2.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="image/openhouse_homepage3.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="container mt-4">
+        <div class="row mb-4">
+          <div class="col-md-6 mb-4">
+            <a href="about.html" class="btn btn-about d-flex flex-column align-items-center justify-content-center text-center p-4 rounded shadow-sm">
+              <img class="img-small mb-3" src="image/mascot.gif" alt="mascot" />
+              <h2 class="display-5 mb-3">About Us</h2>
+              <p class="lead">ดูเพิ่มเติมเกี่ยวกับเรา</p>
+            </a>
+          </div>
+          <div class="col-md-6 mb-4">
+            <a href="schedule.html" class="btn btn-schedule d-flex flex-column align-items-center justify-content-center text-center p-4 rounded shadow-sm">
+              <img class="img-small mb-3" src="image/mascot2.gif" alt="mascot2" />
+              <h2 class="display-5 mb-3">Schedule</h2>
+              <p class="lead">ดูตาราง</p>
+            </a>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-6 mb-4">
+            <a href="contact.html" class="btn btn-contact d-flex flex-column align-items-center justify-content-center text-center p-4 rounded shadow-sm">
+              <img class="img-small mb-3" src="image/mascot3.gif" alt="mascot3" />
+              <h2 class="display-5 mb-3">Contact Us</h2>
+              <p class="lead">ช่องทางติดต่อเรา</p>
+            </a>
+          </div>
+          <div class="col-md-6 mb-4">
+            <a href="FAQ.html" class="btn btn-faq d-flex flex-column align-items-center justify-content-center text-center p-4 rounded shadow-sm">
+              <img class="img-small mb-3" src="image/mascot4.gif" alt="mascot4" />
+              <h2 class="display-5 mb-3">FAQ</h2>
+              <p class="lead">คำถามที่พบบ่อย</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <p class="mb-0">© 2024 BU Open House. All rights reserved.</p>
+      <div class="social-links d-flex flex-column flex-md-row align-items-md-center">
+        <a class="text-link mb-2 mb-md-0 me-md-3 d-flex align-items-center" href="https://www.facebook.com/bangkokuniversity" target="_blank">
+          <i class="fa-brands fa-facebook me-2"></i>Bangkok University
+        </a>
+        <a class="text-link d-flex align-items-center" href="https://www.instagram.com/bangkok_bu/" target="_blank">
+          <i class="fa-brands fa-instagram me-2"></i>@bangkok_BU
+        </a>
+      </div>
+      <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+      </button>
+    </div>
+  </footer>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
