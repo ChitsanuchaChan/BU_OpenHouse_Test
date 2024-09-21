@@ -34,20 +34,21 @@
       align-items: flex-start; /* จัดแนวตามแนวตั้งให้เริ่มที่ด้านบน */
     }
     .content-text {
-      flex: 2; /* ทำให้พื้นที่ข้อความกว้างกว่าภาพ */
-      min-width: 300px; /* กำหนดขนาดขั้นต่ำ */
-      padding: 20px; /* เพิ่มพื้นที่ภายใน */
-      background-color: rgba(0, 0, 0, 0.7); /* เพิ่มพื้นหลังเพื่อทำให้ข้อความโดดเด่น */
-      border-radius: 8px; /* มุมโค้งมน */
+      flex: 2;
+      min-width: 300px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7); 
+      border-radius: 8px;
     }
     .carousel-item img {
       object-fit: cover;
-      height: 500px; /* กำหนดความสูงของภาพใน Carousel */
+      height: 500px;
     }
   </style>
 </head>
 <body class="bg-dark text-white">
   <header>
+    <!-- navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top border-bottom">
       <div class="container">
         <a href="https://www.bu.ac.th/th" class="navbar-brand">
@@ -109,7 +110,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
+      <!-- ประวัติ -->
       <div class="content-container">
         <div class="content-text">
           <p class="text-center">ขณะที่คุณอ่านข้อความนี้ หนึ่งวินาทีก็ผ่านไป และวินาทีถัดมา โลกก็ไม่เหมือนเดิมแล้ว!</p>
@@ -125,7 +126,7 @@
           <img src="image/thai pavillion.jpg" alt="Thai Pavillion">
         </div>
       </div>
-
+      <!-- VDO -->
       <div class="container mt-4">
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/EeWoXHwuHXw" frameborder="0" allowfullscreen></iframe>
